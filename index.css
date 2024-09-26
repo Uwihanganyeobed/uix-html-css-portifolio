@@ -111,6 +111,28 @@ nav ul li a:hover {
 .hobbies img:hover {
    transform: scale(1.05);
 }
+/* Media Section Styles */
+.media-section {
+   text-align: center; /* Center the text within the section */
+   margin: 40px 0; /* Margin for spacing above and below */
+}
+
+.media-controls {
+   display: flex; /* Use flexbox to arrange items in a row */
+   justify-content: center; /* Center the items horizontally */
+   gap: 30px; /* Space between audio and video */
+   align-items: center; /* Center items vertically if needed */
+}
+
+.media-item {
+   flex: 0 0 auto; /* Prevent flex items from shrinking */
+   max-width: 320px; /* Limit the maximum width of the media items */
+}
+
+.media-item audio,
+.media-item video {
+   width: 100%; /* Make the media elements responsive */
+}
 
 /* Media Queries */
 @media (max-width: 768px) {
