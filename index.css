@@ -61,7 +61,7 @@ nav ul li a:hover {
    padding: 40px 20px;
    background-color: white;
    margin: 40px auto;
-   max-width: 1200px;
+   max-width: 1700px;
    border-radius: 20px;
    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -98,7 +98,40 @@ nav ul li a:hover {
    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
    color: white;
 }
+.hobbies {
+   display: flex;
+   flex-wrap: wrap; /* Ensures content wraps if there's not enough space */
+   justify-content: space-between; /* Distribute space between items */
+   gap: 20px; /* Add spacing between the hobby divs */
+}
 
+/* Styling for individual hobby */
+.hobby {
+   flex: 1; /* Allow each hobby div to take equal width */
+   min-width: 200px; /* Set a minimum width to ensure responsiveness */
+   text-align: center; /* Center-align the content inside each hobby */
+   text-align: center;
+   margin-bottom: 30px; /* Space between hobbies */
+   border: 1px solid #ddd; /* Optional: border for each hobby div */
+   padding: 20px; /* Padding inside each hobby box */
+   border-radius: 10px; /* Rounded corners */
+   background-color: #fff; /* Background color */
+}
+
+/* Image styling inside each hobby */
+.hobby img {
+   max-width: 100%;
+   height: auto;
+   margin-bottom: 15px; /* Space between image and text */
+   border-radius: 8px; /* Optional: Rounded image corners */
+}
+
+/* Paragraph (description) styling */
+.hobby p {
+   font-size: 1.1em;
+   color: #666;
+   line-height: 1.6;
+}
 .hobbies img {
    width: 120px;
    height: 120px;
@@ -111,6 +144,20 @@ nav ul li a:hover {
 .hobbies img:hover {
    transform: scale(1.05);
 }
+.media {
+   display: flex;
+   flex-wrap: wrap; /* Wrap if necessary */
+   justify-content: space-between; /* Add space between audio and video */
+   gap: 20px; /* Space between the audio and video */
+   align-items: center; /* Vertically align items */
+}
+
+.audio-player, .video-player {
+   flex: 1; /* Make both elements take up equal space */
+   min-width: 300px; /* Ensure they stay responsive */
+   text-align: center; /* Center content in each section */
+}
+
 /* Media Section Styles */
 .media-section {
    text-align: center; /* Center the text within the section */
@@ -189,4 +236,28 @@ footer .social-links a {
 
 footer .social-links a:hover {
    color: rgba(255, 255, 255, 0.7);
+}
+#page-description {
+   background-color: #ffffff;
+   padding: 60px 0;
+   text-align: center;
+}
+
+#page-description .container {
+   max-width: 1000px;
+   margin: 0 auto;
+   padding: 0 20px;
+}
+
+#page-description h2 {
+   font-size: 2em;
+   margin-bottom: 20px;
+   color: #333;
+}
+
+#page-description p {
+   font-size: 1.1em;
+   color: #666;
+   margin-bottom: 20px;
+   line-height: 1.6;
 }
